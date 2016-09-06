@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- style -->
+<link rel="stylesheet" type="text/css" href="css/calc.css">
+
+<!-- functionality -->
+<script src="js/functionality.js"></script>
+
+</head>
+<body>
+	<div id="calc_back">
+		<div id="calc_screen_cont">
+			<div id="calc_screen">
+			</div>
+		</div>
+		<div class="row" class="btn_cont">
+			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+			<button type="button" value="(" class="btn btn-default" onclick="addText(this)">(</button>
+			</div>
+			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+			<button type="button" value=")"  class="btn btn-default" onclick="addText(this)">)</button>
+			</div>
+			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+			<button type="button" value="%"  class="btn btn-default" onclick="addText(this)">mod</button>
+			</div>
+			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+			<button type="button" value="C"  class="btn btn-default" onclick="clearScreen()">AC</button>
+			</div>
+		</div>
+		<div class="row" class="btn_cont">
+			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+			<button type="button" value="1"  class="btn btn-default" onclick="addText(this)">1</button>
+			</div>
+			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+			<button type="button" value="2"  class="btn btn-default" onclick="addText(this)">2</button>
+			</div>
+			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+			<button type="button" value="3"  class="btn btn-default" onclick="addText(this)">3</button>
+			</div>
+			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+			<button type="button" value="*"  class="btn btn-default" onclick="addText(this)">*</button>
+			</div>
+		</div>
+		<div class="row" class="btn_cont">
+			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+			<button type="button" value="4"  class="btn btn-default" onclick="addText(this)">4</button>
+			</div>
+			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+			<button type="button" value="5"  class="btn btn-default" onclick="addText(this)">5</button>
+			</div>
+			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+			<button type="button" value="6"  class="btn btn-default" onclick="addText(this)">6</button>
+			</div>
+			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+			<button type="button" value="/"  class="btn btn-default" onclick="addText(this)">/</button>
+			</div>
+		</div>
+		<div class="row" class="btn_cont">
+			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+			<button type="button" value="7"  class="btn btn-default" onclick="addText(this)">7</button>
+			</div>
+			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+			<button type="button" value="8"  class="btn btn-default" onclick="addText(this)">8</button>
+			</div>
+			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+			<button type="button" value="9"  class="btn btn-default" onclick="addText(this)">9</button>
+			</div>
+			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+			<button type="button" value="+"  class="btn btn-default" onclick="addText(this)">+</button>
+			</div>
+		</div>
+		<div class="row" class="btn_cont">
+			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+			<button type="button" value="0"  class="btn btn-default" onclick="addText(this)">0</button>
+			</div>
+			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+			<button type="button" value="."  class="btn btn-default" onclick="addText(this)">.</button>
+			</div>
+			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+			<button type="button" value="Backspace"  class="btn btn-default" onclick="backSpace()">&larr;</button>
+			</div>
+			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+			<button type="button" value="-"  class="btn btn-default" onclick="addText(this)">-</button>
+			</div>
+		</div>
+		<div class="row" class="btn_cont" id="backspace">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<button type="button" value="="  class="btn btn-default" onclick="calculate()">
+				Enter
+			</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
